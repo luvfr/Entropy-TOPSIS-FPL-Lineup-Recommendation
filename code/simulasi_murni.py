@@ -1,0 +1,302 @@
+import pandas as pd
+import numpy as np
+import os
+import unicodedata
+import re
+from rapidfuzz import process, fuzz
+
+
+# Folder proyek = induk dari folder code/. Dapat diganti lewat FPL_BASE_DIR.
+BASE_DIR = os.environ.get(
+    "FPL_BASE_DIR",
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+)
+SQUAD_DIR      = os.path.join(BASE_DIR, "results", "squad_selection")
+VAASTAV_DIR    = os.path.join(BASE_DIR, "results", "vaastav")
+OUTPUT_DIR     = os.path.join(BASE_DIR, "results", "simulation")
+
+# Mapping periode → GW yang dievaluasi
+PERIODS = [
+    ("GW13", [13, 14, 15]),
+    ("GW16", [16, 17, 18]),
+    ("GW19", [19, 20, 21]),
+    ("GW22", [22, 23, 24, 25]),
+    ("GW26", [26, 27, 28, 29]),
+    ("GW30", [30, 31, 32]),
+    ("GW33", [33, 34, 35]),
+    ("GW36", [36, 37, 38]),
+]
+
+# Threshold fuzzy matching nama pemain
+MATCH_THRESHOLD = 75
+
+
+def fix_encoding(text):
+    if not isinstance(text, str):
+        return text
+    try:
+        return text.encode('latin-1').decode('utf-8')
+    except (UnicodeDecodeError, UnicodeEncodeError):
+        return text
+
+def normalize_name(name):
+    """Normalize nama untuk fuzzy matching."""
+    if not isinstance(name, str):
+        return ""
+    name = fix_encoding(name)
+    name = unicodedata.normalize('NFKD', name)
+    name = ''.join(c for c in name if not unicodedata.combining(c))
+    name = name.lower().strip()
+    name = re.sub(r'\s+', ' ', name)
+    return name
+
+
+def load_squad(period_label):
+    """Load squad terpilih dari hasil seleksi_tim.py"""
+    filepath = os.path.join(SQUAD_DIR, f"{period_label}_squad.csv")
+    if not os.path.exists(filepath):
+        print(f"  ✗ File squad tidak ditemukan: {filepath}")
+        return None
+    df = pd.read_csv(filepath)
+    df['name_normalized'] = df['full_name'].apply(normalize_name)
+    return df
+
+def load_vaastav(gw_number):
+    """Load data vaastav untuk satu GW."""
+    filepath = os.path.join(VAASTAV_DIR, f"gw{gw_number}.csv")
+    if not os.path.exists(filepath):
+        print(f"  ✗ File vaastav tidak ditemukan: gw{gw_number}.csv")
+        return None
+    df = pd.read_csv(filepath)
+    df['name_normalized'] = df['name'].apply(normalize_name)
+    return df
+
+
+def match_player(name_normalized, vaastav_df, threshold=MATCH_THRESHOLD):
+    """
+    Fuzzy match nama pemain ke dataset vaastav.
+    Pada gameweek ganda file vaastav memuat lebih dari satu baris per pemain.
+    Semua baris dengan nama ternormalisasi yang sama dijumlahkan
+    (total_points dan minutes).
+    Return: (vaastav_row, match_score) atau (None, 0)
+    """
+    vaastav_names = vaastav_df['name_normalized'].tolist()
+    result = process.extractOne(
+        name_normalized,
+        vaastav_names,
+        scorer=fuzz.token_sort_ratio,
+        score_cutoff=threshold
+    )
+    if result:
+        rows = vaastav_df[vaastav_df['name_normalized'] == result[0]]
+        combined = pd.Series({
+            'name': rows['name'].iloc[0],
+            'total_points': rows['total_points'].sum(),
+            'minutes': rows['minutes'].sum(),
+        })
+        return combined, result[1]
+    return None, 0
+
+
+def calculate_gw_points(squad_df, vaastav_df, gw):
+    starting = squad_df[squad_df['role'].isin(
+        ['Starting', 'Starting (C)', 'Starting (VC)'])].copy()
+    bench = squad_df[squad_df['role'] == 'Bench'].copy()
+ 
+    captain_row   = squad_df[squad_df['role'] == 'Starting (C)']
+    vice_capt_row = squad_df[squad_df['role'] == 'Starting (VC)']
+    captain_name   = captain_row.iloc[0]['full_name'] if len(captain_row) > 0 else None
+    vice_capt_name = vice_capt_row.iloc[0]['full_name'] if len(vice_capt_row) > 0 else None
+ 
+    player_data = {}
+    match_log = []
+    for _, player in squad_df.iterrows():
+        name, name_norm, pos = player['full_name'], player['name_normalized'], player['position']
+        vaastav_row, score = match_player(name_norm, vaastav_df)
+ 
+        if vaastav_row is not None:
+            pts  = int(vaastav_row.get('total_points', 0))
+            mins = int(vaastav_row.get('minutes', 0))
+            player_data[name] = {'points': pts, 'minutes': mins,
+                                  'matched_to': vaastav_row['name'], 'score': score,
+                                  'position': pos}
+            match_log.append({'gw': gw, 'player': name, 'position': pos,
+                               'matched_to': vaastav_row['name'], 'match_score': score,
+                               'points': pts, 'minutes': mins, 'status': 'matched'})
+        else:
+            player_data[name] = {'points': 0, 'minutes': 0,
+                                  'matched_to': 'NOT FOUND', 'score': 0, 'position': pos}
+            match_log.append({'gw': gw, 'player': name, 'position': pos,
+                               'matched_to': 'NOT FOUND', 'match_score': 0,
+                               'points': 0, 'minutes': 0, 'status': 'not_found'})
+ 
+    # Formasi starting XI sebelum substitusi (pemain yang benar-benar bermain)
+    current_formation = {"GK": 0, "DEF": 0, "MID": 0, "FWD": 0}
+    slots = []
+    for _, p in starting.iterrows():
+        name, pos = p['full_name'], p['position']
+        mins = player_data.get(name, {'minutes': 0})['minutes']
+        plays = mins > 0
+        slots.append({'name': name, 'position': pos, 'plays': plays, 'sub_in': None})
+        if plays:
+            current_formation[pos] += 1
+
+    POSITION_ORDER = {"GK": 0, "DEF": 1, "MID": 2, "FWD": 3}
+    slots.sort(key=lambda s: POSITION_ORDER[s['position']])
+    
+    # Cadangan diurutkan berdasar skor ternormalisasi posisi
+    bench_sorted = bench.sort_values('position_norm_score', ascending=False)
+    bench_used = set()
+ 
+    for slot in slots:
+        if slot['plays']:
+            continue
+ 
+        for _, bench_p in bench_sorted.iterrows():
+            bn, bp = bench_p['full_name'], bench_p['position']
+            if bn in bench_used:
+                continue
+            bmins = player_data.get(bn, {'minutes': 0})['minutes']
+            if bmins == 0:
+                continue
+ 
+            # GK cuma bisa digantikan GK, dan sebaliknya
+            if (bp == 'GK') != (slot['position'] == 'GK'):
+                continue
+ 
+            # Simulasikan formasi jika pemain ini masuk
+            new_formation = dict(current_formation)
+            new_formation[bp] += 1
+ 
+            # Formasi hasil akhir harus tetap valid
+            if (new_formation['GK'] == 1 and new_formation['DEF'] >= 3 and
+                    new_formation['MID'] >= 2 and new_formation['FWD'] >= 1):
+                slot['sub_in'] = bn
+                bench_used.add(bn)
+                current_formation[bp] += 1
+                break
+        # kalau tidak ada cadangan valid ditemukan, slot ini tetap kosong (0 poin)
+ 
+    total_points = 0
+    captain_plays = player_data.get(captain_name, {}).get('minutes', 0) > 0
+    vc_plays = player_data.get(vice_capt_name, {}).get('minutes', 0) > 0
+ 
+    for slot in slots:
+        if slot['plays']:
+            pts = player_data[slot['name']]['points']
+        elif slot['sub_in']:
+            pts = player_data[slot['sub_in']]['points']
+        else:
+            pts = 0
+ 
+        name_for_captain = slot['name']  # kapten tetap merujuk ke starter asli
+        if name_for_captain == captain_name and captain_plays:
+            pts *= 2
+        elif name_for_captain == vice_capt_name and not captain_plays and vc_plays:
+            pts *= 2
+ 
+        total_points += pts
+    
+    if gw == 28:
+        print(f"\n[GW28] Rincian per pemain:")
+        for slot in slots:
+            status = "MAIN" if slot['plays'] else f"DISUB -> {slot['sub_in']}" if slot['sub_in'] else "0 POIN (tanpa sub)"
+            pts_used = player_data[slot['name']]['points'] if slot['plays'] else \
+                       (player_data[slot['sub_in']]['points'] if slot['sub_in'] else 0)
+            print(f"  {slot['name']:<30} ({slot['position']}) {status:<25} poin dipakai: {pts_used}")
+        print(f"  Total: {total_points}")
+    
+    # Mengembalikan total poin, log pencocokan, dan data pemain
+    return total_points, match_log, player_data
+
+
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    print(f"{'='*65}")
+    print(f"  Simulasi Murni Retroaktif — Entropy-TOPSIS FPL 2025/26")
+    print(f"{'='*65}\n")
+
+    results   = []
+    all_logs  = []
+
+    for period_label, gw_list in PERIODS:
+        print(f"{'─'*65}")
+        print(f"  Periode: {period_label} | GW: {gw_list}")
+
+        squad_df = load_squad(period_label)
+        if squad_df is None:
+            continue
+
+        captain_row   = squad_df[squad_df['role'] == 'Starting (C)']
+        vice_capt_row = squad_df[squad_df['role'] == 'Starting (VC)']
+        captain   = captain_row.iloc[0]['full_name'] if len(captain_row) > 0 else '-'
+        vice_capt = vice_capt_row.iloc[0]['full_name'] if len(vice_capt_row) > 0 else '-'
+        formation = squad_df['formation'].iloc[0] if 'formation' in squad_df.columns else '-'
+
+        print(f"  Formasi: {formation} | Captain: {captain}")
+
+        for gw in gw_list:
+            vaastav_df = load_vaastav(gw)
+            if vaastav_df is None:
+                continue
+
+            total_pts, match_log, player_data = calculate_gw_points(
+                squad_df, vaastav_df, gw
+            )
+
+            # AP dan HP tidak ada di data vaastav per file GW, jadi tidak dihitung di sini.
+            # Nilai AP tersedia di results/ap_per_gameweek.csv.
+            avg_pts = None  # kolom avg_points_global dibiarkan kosong
+
+            not_found = [l for l in match_log if l['status'] == 'not_found']
+            low_match = [l for l in match_log if 0 < l['match_score'] < 85]
+
+            print(f"\n  GW{gw}:")
+            print(f"    Total poin model : {total_pts}")
+            if not_found:
+                print(f"    ⚠ Tidak ditemukan: "
+                      f"{[l['player'] for l in not_found]}")
+            if low_match:
+                print(f"    ⚠ Match rendah  : "
+                      f"{[(l['player'], l['matched_to'], l['match_score']) for l in low_match]}")
+
+            results.append({
+                'periode':          period_label,
+                'gw':               gw,
+                'formasi':          formation,
+                'captain':          captain,
+                'vice_captain':     vice_capt,
+                'total_points_model': total_pts,
+                'avg_points_global':  avg_pts,
+            })
+
+            all_logs.extend(match_log)
+
+        print()
+
+    df_results = pd.DataFrame(results)
+    df_results.to_csv(
+        os.path.join(OUTPUT_DIR, "simulation_results.csv"), index=False
+    )
+
+    df_logs = pd.DataFrame(all_logs)
+    df_logs.to_csv(
+        os.path.join(OUTPUT_DIR, "match_log.csv"), index=False
+    )
+
+    print(f"{'─'*65}")
+    print("  Ringkasan hasil simulasi murni:")
+    print(df_results[['gw', 'formasi', 'captain',
+                       'total_points_model']].to_string(index=False))
+
+    print(f"\n{'='*65}")
+    print(f"  Selesai! Output:")
+    print(f"  - {os.path.join(OUTPUT_DIR, 'simulation_results.csv')}")
+    print(f"  - {os.path.join(OUTPUT_DIR, 'match_log.csv')}")
+    print(f"{'='*65}")
+
+    return df_results
+
+if __name__ == "__main__":
+    df_results = main()

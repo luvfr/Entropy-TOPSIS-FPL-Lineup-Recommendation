@@ -1,0 +1,391 @@
+gw,player,position,matched_to,match_score,points,minutes,status
+13,Jurriën Timber,DEF,Jurriën Timber,100.0,2,90,matched
+13,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,1,90,matched
+13,Micky van de Ven,DEF,Micky van de Ven,100.0,0,90,matched
+13,Daniel Ballard,DEF,Daniel Ballard,100.0,3,90,matched
+13,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,9,90,matched
+13,Erling Haaland,FWD,Erling Haaland,100.0,2,90,matched
+13,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,1,54,matched
+13,Richarlison de Andrade,FWD,Richarlison de Andrade,100.0,1,59,matched
+13,Robin Roefs,GK,Robin Roefs,100.0,1,90,matched
+13,Jordan Pickford,GK,Jordan Pickford,100.0,1,90,matched
+13,Antoine Semenyo,MID,Antoine Semenyo,100.0,1,90,matched
+13,Declan Rice,MID,Declan Rice,100.0,4,90,matched
+13,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,4,89,matched
+13,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,3,90,matched
+13,Pedro Lomba Neto,MID,Pedro Lomba Neto,100.0,2,90,matched
+14,Jurriën Timber,DEF,Jurriën Timber,100.0,1,46,matched
+14,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,14,90,matched
+14,Micky van de Ven,DEF,Micky van de Ven,100.0,0,0,matched
+14,Daniel Ballard,DEF,Daniel Ballard,100.0,4,90,matched
+14,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,1,90,matched
+14,Erling Haaland,FWD,Erling Haaland,100.0,14,90,matched
+14,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,2,90,matched
+14,Richarlison de Andrade,FWD,Richarlison de Andrade,100.0,0,13,matched
+14,Robin Roefs,GK,Robin Roefs,100.0,3,90,matched
+14,Jordan Pickford,GK,Jordan Pickford,100.0,7,90,matched
+14,Antoine Semenyo,MID,Antoine Semenyo,100.0,4,90,matched
+14,Declan Rice,MID,Declan Rice,100.0,3,82,matched
+14,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,7,45,matched
+14,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,5,90,matched
+14,Pedro Lomba Neto,MID,Pedro Lomba Neto,100.0,6,45,matched
+15,Jurriën Timber,DEF,Jurriën Timber,100.0,3,90,matched
+15,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,0,0,matched
+15,Micky van de Ven,DEF,Micky van de Ven,100.0,6,90,matched
+15,Daniel Ballard,DEF,Daniel Ballard,100.0,1,90,matched
+15,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,11,90,matched
+15,Erling Haaland,FWD,Erling Haaland,100.0,2,68,matched
+15,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,1,32,matched
+15,Richarlison de Andrade,FWD,Richarlison de Andrade,100.0,8,90,matched
+15,Robin Roefs,GK,Robin Roefs,100.0,1,90,matched
+15,Jordan Pickford,GK,Jordan Pickford,100.0,6,90,matched
+15,Antoine Semenyo,MID,Antoine Semenyo,100.0,3,90,matched
+15,Declan Rice,MID,Declan Rice,100.0,6,90,matched
+15,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,10,90,matched
+15,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,5,90,matched
+15,Pedro Lomba Neto,MID,Pedro Lomba Neto,100.0,2,90,matched
+16,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,0,0,matched
+16,Marc Guéhi,DEF,Marc Guéhi,100.0,1,90,matched
+16,Jurriën Timber,DEF,Jurriën Timber,100.0,2,90,matched
+16,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,9,90,matched
+16,Jan Paul van Hecke,DEF,Jan Paul van Hecke,100.0,1,90,matched
+16,Erling Haaland,FWD,Erling Haaland,100.0,13,90,matched
+16,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,2,80,matched
+16,Jarrod Bowen,FWD,Jarrod Bowen,100.0,8,90,matched
+16,Jordan Pickford,GK,Jordan Pickford,100.0,2,90,matched
+16,Robin Roefs,GK,Robin Roefs,100.0,9,90,matched
+16,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,1,90,matched
+16,Antoine Semenyo,MID,Antoine Semenyo,100.0,6,90,matched
+16,Declan Rice,MID,Declan Rice,100.0,2,90,matched
+16,Kiernan Dewsbury-Hall,MID,Kiernan Dewsbury-Hall,100.0,1,15,matched
+16,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,5,90,matched
+17,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,0,0,matched
+17,Marc Guéhi,DEF,Marc Guéhi,100.0,1,90,matched
+17,Jurriën Timber,DEF,Jurriën Timber,100.0,6,90,matched
+17,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,3,90,matched
+17,Jan Paul van Hecke,DEF,Jan Paul van Hecke,100.0,0,0,matched
+17,Erling Haaland,FWD,Erling Haaland,100.0,16,90,matched
+17,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,6,90,matched
+17,Jarrod Bowen,FWD,Jarrod Bowen,100.0,1,90,matched
+17,Jordan Pickford,GK,Jordan Pickford,100.0,2,90,matched
+17,Robin Roefs,GK,Robin Roefs,100.0,7,90,matched
+17,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,2,90,matched
+17,Antoine Semenyo,MID,Antoine Semenyo,100.0,10,90,matched
+17,Declan Rice,MID,Declan Rice,100.0,11,90,matched
+17,Kiernan Dewsbury-Hall,MID,Kiernan Dewsbury-Hall,100.0,0,0,matched
+17,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,2,90,matched
+18,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,0,0,matched
+18,Marc Guéhi,DEF,Marc Guéhi,100.0,2,90,matched
+18,Jurriën Timber,DEF,Jurriën Timber,100.0,0,0,matched
+18,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,0,90,matched
+18,Jan Paul van Hecke,DEF,Jan Paul van Hecke,100.0,3,90,matched
+18,Erling Haaland,FWD,Erling Haaland,100.0,2,90,matched
+18,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,8,68,matched
+18,Jarrod Bowen,FWD,Jarrod Bowen,100.0,2,90,matched
+18,Jordan Pickford,GK,Jordan Pickford,100.0,6,90,matched
+18,Robin Roefs,GK,Robin Roefs,100.0,3,90,matched
+18,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,2,90,matched
+18,Antoine Semenyo,MID,Antoine Semenyo,100.0,9,90,matched
+18,Declan Rice,MID,Declan Rice,100.0,5,90,matched
+18,Kiernan Dewsbury-Hall,MID,Kiernan Dewsbury-Hall,100.0,0,0,matched
+18,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,11,90,matched
+19,Reece James,DEF,Reece James,100.0,1,45,matched
+19,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,0,0,matched
+19,Marc Guéhi,DEF,Marc Guéhi,100.0,2,90,matched
+19,Jurriën Timber,DEF,Jurriën Timber,100.0,9,82,matched
+19,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,1,90,matched
+19,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,1,27,matched
+19,Hugo Ekitiké,FWD,Hugo Ekitiké,100.0,2,90,matched
+19,Richarlison de Andrade,FWD,Richarlison de Andrade,100.0,2,90,matched
+19,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,6,90,matched
+19,Robin Roefs,GK,Robin Roefs,100.0,7,90,matched
+19,Antoine Semenyo,MID,Antoine Semenyo,100.0,5,90,matched
+19,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,0,0,matched
+19,Harry Wilson,MID,Harry Wilson,100.0,2,84,matched
+19,Morgan Rogers,MID,Morgan Rogers,100.0,1,81,matched
+19,Phil Foden,MID,Phil Foden,100.0,3,90,matched
+20,Reece James,DEF,Reece James,100.0,1,90,matched
+20,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,0,0,matched
+20,Marc Guéhi,DEF,Marc Guéhi,100.0,2,90,matched
+20,Jurriën Timber,DEF,Jurriën Timber,100.0,3,90,matched
+20,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,4,90,matched
+20,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,2,61,matched
+20,Hugo Ekitiké,FWD,Hugo Ekitiké,100.0,0,0,matched
+20,Richarlison de Andrade,FWD,Richarlison de Andrade,100.0,2,90,matched
+20,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,2,90,matched
+20,Robin Roefs,GK,Robin Roefs,100.0,3,90,matched
+20,Antoine Semenyo,MID,Antoine Semenyo,100.0,1,90,matched
+20,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,0,0,matched
+20,Harry Wilson,MID,Harry Wilson,100.0,6,84,matched
+20,Morgan Rogers,MID,Morgan Rogers,100.0,5,90,matched
+20,Phil Foden,MID,Phil Foden,100.0,2,90,matched
+21,Reece James,DEF,Reece James,100.0,1,25,matched
+21,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,0,0,matched
+21,Marc Guéhi,DEF,Marc Guéhi,100.0,6,90,matched
+21,Jurriën Timber,DEF,Jurriën Timber,100.0,6,90,matched
+21,Trevoh Chalobah,DEF,Trevoh Chalobah,100.0,3,90,matched
+21,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,1,15,matched
+21,Hugo Ekitiké,FWD,Hugo Ekitiké,100.0,0,0,matched
+21,Richarlison de Andrade,FWD,Richarlison de Andrade,100.0,1,23,matched
+21,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,13,90,matched
+21,Robin Roefs,GK,Robin Roefs,100.0,2,90,matched
+21,Antoine Semenyo,MID,Antoine Semenyo,100.0,6,90,matched
+21,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,7,60,matched
+21,Harry Wilson,MID,Harry Wilson,100.0,9,90,matched
+21,Morgan Rogers,MID,Morgan Rogers,100.0,3,90,matched
+21,Phil Foden,MID,Phil Foden,100.0,2,72,matched
+22,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,8,90,matched
+22,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,0,0,matched
+22,Reece James,DEF,Reece James,100.0,7,84,matched
+22,Marc Guéhi,DEF,Marc Guéhi,100.0,0,0,matched
+22,Matty Cash,DEF,Matty Cash,100.0,2,90,matched
+22,Erling Haaland,FWD,Erling Haaland,100.0,2,79,matched
+22,Igor Thiago Nascimento Rodrigues,FWD,Igor Thiago Nascimento Rodrigues,100.0,2,90,matched
+22,Dominic Calvert-Lewin,FWD,Dominic Calvert-Lewin,100.0,2,90,matched
+22,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,1,90,matched
+22,Robin Roefs,GK,Robin Roefs,100.0,2,90,matched
+22,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,3,90,matched
+22,Antoine Semenyo,MID,Antoine Semenyo,100.0,2,90,matched
+22,Harry Wilson,MID,Harry Wilson,100.0,2,87,matched
+22,Declan Rice,MID,Declan Rice,100.0,3,90,matched
+22,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,2,77,matched
+23,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,1,90,matched
+23,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,1,75,matched
+23,Reece James,DEF,Reece James,100.0,6,80,matched
+23,Marc Guéhi,DEF,Marc Guéhi,100.0,6,90,matched
+23,Matty Cash,DEF,Matty Cash,100.0,6,90,matched
+23,Erling Haaland,FWD,Erling Haaland,100.0,1,17,matched
+23,Igor Thiago Nascimento Rodrigues,FWD,Igor Thiago Nascimento Rodrigues,100.0,2,90,matched
+23,Dominic Calvert-Lewin,FWD,Dominic Calvert-Lewin,100.0,2,90,matched
+23,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,1,90,matched
+23,Robin Roefs,GK,Robin Roefs,100.0,1,90,matched
+23,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,0,0,matched
+23,Antoine Semenyo,MID,Antoine Semenyo,100.0,8,90,matched
+23,Harry Wilson,MID,Harry Wilson,100.0,10,90,matched
+23,Declan Rice,MID,Declan Rice,100.0,1,90,matched
+23,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,1,90,matched
+24,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,8,90,matched
+24,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,2,90,matched
+24,Reece James,DEF,Reece James,100.0,1,9,matched
+24,Marc Guéhi,DEF,Marc Guéhi,100.0,3,90,matched
+24,Matty Cash,DEF,Matty Cash,100.0,2,90,matched
+24,Erling Haaland,FWD,Erling Haaland,100.0,5,90,matched
+24,Igor Thiago Nascimento Rodrigues,FWD,Igor Thiago Nascimento Rodrigues,100.0,2,90,matched
+24,Dominic Calvert-Lewin,FWD,Dominic Calvert-Lewin,100.0,2,84,matched
+24,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,10,90,matched
+24,Robin Roefs,GK,Robin Roefs,100.0,6,90,matched
+24,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,0,0,matched
+24,Antoine Semenyo,MID,Antoine Semenyo,100.0,7,90,matched
+24,Harry Wilson,MID,Harry Wilson,100.0,2,90,matched
+24,Declan Rice,MID,Declan Rice,100.0,3,90,matched
+24,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,4,90,matched
+25,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,6,90,matched
+25,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,5,90,matched
+25,Reece James,DEF,Reece James,100.0,0,0,matched
+25,Marc Guéhi,DEF,Marc Guéhi,100.0,3,90,matched
+25,Matty Cash,DEF,Matty Cash,100.0,2,90,matched
+25,Erling Haaland,FWD,Erling Haaland,100.0,11,90,matched
+25,Igor Thiago Nascimento Rodrigues,FWD,Igor Thiago Nascimento Rodrigues,100.0,5,90,matched
+25,Dominic Calvert-Lewin,FWD,Dominic Calvert-Lewin,100.0,7,90,matched
+25,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,1,90,matched
+25,Robin Roefs,GK,Robin Roefs,100.0,1,90,matched
+25,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,11,90,matched
+25,Antoine Semenyo,MID,Antoine Semenyo,100.0,2,90,matched
+25,Harry Wilson,MID,Harry Wilson,100.0,2,90,matched
+25,Declan Rice,MID,Declan Rice,100.0,5,90,matched
+25,Ryan Gravenberch,MID,Ryan Gravenberch,100.0,5,90,matched
+26,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,7,180,matched
+26,Micky van de Ven,DEF,Micky van de Ven,100.0,3,90,matched
+26,Cristian Romero,DEF,Cristian Romero,100.0,0,0,matched
+26,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,1,71,matched
+26,Patrick Dorgu,DEF,Patrick Dorgu,100.0,0,0,matched
+26,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,10,90,matched
+26,Jarrod Bowen,FWD,Jarrod Bowen,100.0,5,89,matched
+26,Igor Thiago Nascimento Rodrigues,FWD,Igor Thiago Nascimento Rodrigues,100.0,2,90,matched
+26,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,2,90,matched
+26,Jordan Pickford,GK,Jordan Pickford,100.0,1,90,matched
+26,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,2,90,matched
+26,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,3,90,matched
+26,Antoine Semenyo,MID,Antoine Semenyo,100.0,14,90,matched
+26,Harry Wilson,MID,Harry Wilson,100.0,2,71,matched
+26,Declan Rice,MID,Declan Rice,100.0,14,180,matched
+27,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,2,90,matched
+27,Micky van de Ven,DEF,Micky van de Ven,100.0,0,90,matched
+27,Cristian Romero,DEF,Cristian Romero,100.0,0,0,matched
+27,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,9,90,matched
+27,Patrick Dorgu,DEF,Patrick Dorgu,100.0,0,0,matched
+27,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,7,79,matched
+27,Jarrod Bowen,FWD,Jarrod Bowen,100.0,4,90,matched
+27,Igor Thiago Nascimento Rodrigues,FWD,Igor Thiago Nascimento Rodrigues,100.0,2,90,matched
+27,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,2,90,matched
+27,Jordan Pickford,GK,Jordan Pickford,100.0,1,90,matched
+27,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,2,90,matched
+27,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,0,0,matched
+27,Antoine Semenyo,MID,Antoine Semenyo,100.0,4,86,matched
+27,Harry Wilson,MID,Harry Wilson,100.0,8,90,matched
+27,Declan Rice,MID,Declan Rice,100.0,4,90,matched
+28,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,9,90,matched
+28,Micky van de Ven,DEF,Micky van de Ven,100.0,0,90,matched
+28,Cristian Romero,DEF,Cristian Romero,100.0,0,0,matched
+28,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,1,90,matched
+28,Patrick Dorgu,DEF,Patrick Dorgu,100.0,0,0,matched
+28,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,2,90,matched
+28,Jarrod Bowen,FWD,Jarrod Bowen,100.0,7,90,matched
+28,Igor Thiago Nascimento Rodrigues,FWD,Igor Thiago Nascimento Rodrigues,100.0,6,90,matched
+28,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,0,0,matched
+28,Jordan Pickford,GK,Jordan Pickford,100.0,2,90,matched
+28,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,13,90,matched
+28,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,0,0,matched
+28,Antoine Semenyo,MID,Antoine Semenyo,100.0,8,90,matched
+28,Harry Wilson,MID,Harry Wilson,100.0,12,71,matched
+28,Declan Rice,MID,Declan Rice,100.0,5,75,matched
+29,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,11,90,matched
+29,Micky van de Ven,DEF,Micky van de Ven,100.0,-3,37,matched
+29,Cristian Romero,DEF,Cristian Romero,100.0,0,0,matched
+29,Daniel Muñoz Mejía,DEF,Daniel Muñoz Mejía,100.0,1,13,matched
+29,Patrick Dorgu,DEF,Patrick Dorgu,100.0,0,0,matched
+29,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,19,84,matched
+29,Jarrod Bowen,FWD,Jarrod Bowen,100.0,4,90,matched
+29,Igor Thiago Nascimento Rodrigues,FWD,Igor Thiago Nascimento Rodrigues,100.0,2,90,matched
+29,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,6,90,matched
+29,Jordan Pickford,GK,Jordan Pickford,100.0,6,90,matched
+29,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,8,90,matched
+29,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,0,0,matched
+29,Antoine Semenyo,MID,Antoine Semenyo,100.0,7,90,matched
+29,Harry Wilson,MID,Harry Wilson,100.0,0,0,matched
+29,Declan Rice,MID,Declan Rice,100.0,3,90,matched
+30,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,9,90,matched
+30,Jurriën Timber,DEF,Jurriën Timber,100.0,1,37,matched
+30,Reece James,DEF,Reece James,100.0,2,90,matched
+30,Nico O'Reilly,DEF,Nico O'Reilly,100.0,2,90,matched
+30,Matheus Nunes,DEF,Matheus Nunes,100.0,2,90,matched
+30,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,2,90,matched
+30,Jarrod Bowen,FWD,Jarrod Bowen,100.0,6,90,matched
+30,Raúl Jiménez Rodríguez,FWD,Raúl Jiménez Rodríguez,100.0,2,61,matched
+30,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,1,90,matched
+30,Jordan Pickford,GK,Jordan Pickford,100.0,2,90,matched
+30,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,10,90,matched
+30,Antoine Semenyo,MID,Antoine Semenyo,100.0,2,74,matched
+30,Harry Wilson,MID,Harry Wilson,100.0,3,90,matched
+30,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,0,0,matched
+30,Declan Rice,MID,Declan Rice,100.0,3,90,matched
+31,Gabriel dos Santos Magalhães,DEF,NOT FOUND,0.0,0,0,not_found
+31,Jurriën Timber,DEF,NOT FOUND,0.0,0,0,not_found
+31,Reece James,DEF,Reece James,100.0,0,0,matched
+31,Nico O'Reilly,DEF,NOT FOUND,0.0,0,0,not_found
+31,Matheus Nunes,DEF,NOT FOUND,0.0,0,0,not_found
+31,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,2,77,matched
+31,Jarrod Bowen,FWD,Jarrod Bowen,100.0,2,90,matched
+31,Raúl Jiménez Rodríguez,FWD,Raúl Jiménez Rodríguez,100.0,5,8,matched
+31,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,9,90,matched
+31,Jordan Pickford,GK,Jordan Pickford,100.0,7,90,matched
+31,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,13,90,matched
+31,Antoine Semenyo,MID,NOT FOUND,0.0,0,0,not_found
+31,Harry Wilson,MID,Harry Wilson,100.0,9,86,matched
+31,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,0,0,matched
+31,Declan Rice,MID,NOT FOUND,0.0,0,0,not_found
+32,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,4,90,matched
+32,Jurriën Timber,DEF,Jurriën Timber,100.0,0,0,matched
+32,Reece James,DEF,Reece James,100.0,0,0,matched
+32,Nico O'Reilly,DEF,Nico O'Reilly,100.0,14,63,matched
+32,Matheus Nunes,DEF,Matheus Nunes,100.0,6,90,matched
+32,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,2,81,matched
+32,Jarrod Bowen,FWD,Jarrod Bowen,100.0,14,90,matched
+32,Raúl Jiménez Rodríguez,FWD,Raúl Jiménez Rodríguez,100.0,1,10,matched
+32,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,2,90,matched
+32,Jordan Pickford,GK,Jordan Pickford,100.0,0,90,matched
+32,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,4,90,matched
+32,Antoine Semenyo,MID,Antoine Semenyo,100.0,2,90,matched
+32,Harry Wilson,MID,Harry Wilson,100.0,2,79,matched
+32,Bruno Guimarães Rodriguez Moura,MID,Bruno Guimarães Rodriguez Moura,100.0,0,0,matched
+32,Declan Rice,MID,Declan Rice,100.0,4,90,matched
+33,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,0,90,matched
+33,Nico O'Reilly,DEF,Nico O'Reilly,100.0,13,180,matched
+33,Jurriën Timber,DEF,Jurriën Timber,100.0,0,0,matched
+33,Micky van de Ven,DEF,Micky van de Ven,100.0,1,90,matched
+33,Cristian Romero,DEF,Cristian Romero,100.0,0,0,matched
+33,Erling Haaland,FWD,Erling Haaland,100.0,13,180,matched
+33,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,0,0,matched
+33,Jarrod Bowen,FWD,Jarrod Bowen,100.0,2,90,matched
+33,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,6,90,matched
+33,Robin Roefs,GK,Robin Roefs,100.0,1,90,matched
+33,Antoine Semenyo,MID,Antoine Semenyo,100.0,5,154,matched
+33,Harry Wilson,MID,Harry Wilson,100.0,3,90,matched
+33,Declan Rice,MID,Declan Rice,100.0,2,90,matched
+33,Carlos Henrique Casimiro,MID,Carlos Henrique Casimiro,100.0,5,90,matched
+33,Kiernan Dewsbury-Hall,MID,Kiernan Dewsbury-Hall,100.0,6,90,matched
+34,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,8,90,matched
+34,Nico O'Reilly,DEF,NOT FOUND,0.0,0,0,not_found
+34,Jurriën Timber,DEF,Jurriën Timber,100.0,0,0,matched
+34,Micky van de Ven,DEF,Micky van de Ven,100.0,6,90,matched
+34,Cristian Romero,DEF,Cristian Romero,100.0,0,0,matched
+34,Erling Haaland,FWD,NOT FOUND,0.0,0,0,not_found
+34,João Pedro Junqueira de Jesus,FWD,NOT FOUND,0.0,0,0,not_found
+34,Jarrod Bowen,FWD,Jarrod Bowen,100.0,10,90,matched
+34,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,2,90,matched
+34,Robin Roefs,GK,Robin Roefs,100.0,0,90,matched
+34,Antoine Semenyo,MID,NOT FOUND,0.0,0,0,not_found
+34,Harry Wilson,MID,Harry Wilson,100.0,2,90,matched
+34,Declan Rice,MID,Declan Rice,100.0,2,90,matched
+34,Carlos Henrique Casimiro,MID,Carlos Henrique Casimiro,100.0,12,90,matched
+34,Kiernan Dewsbury-Hall,MID,Kiernan Dewsbury-Hall,100.0,8,90,matched
+35,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,6,90,matched
+35,Nico O'Reilly,DEF,Nico O'Reilly,100.0,1,90,matched
+35,Jurriën Timber,DEF,Jurriën Timber,100.0,0,0,matched
+35,Micky van de Ven,DEF,Micky van de Ven,100.0,2,90,matched
+35,Cristian Romero,DEF,Cristian Romero,100.0,0,0,matched
+35,Erling Haaland,FWD,Erling Haaland,100.0,7,90,matched
+35,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,8,90,matched
+35,Jarrod Bowen,FWD,Jarrod Bowen,100.0,2,87,matched
+35,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,8,90,matched
+35,Robin Roefs,GK,Robin Roefs,100.0,3,90,matched
+35,Antoine Semenyo,MID,Antoine Semenyo,100.0,2,74,matched
+35,Harry Wilson,MID,Harry Wilson,100.0,2,63,matched
+35,Declan Rice,MID,Declan Rice,100.0,5,63,matched
+35,Carlos Henrique Casimiro,MID,Carlos Henrique Casimiro,100.0,4,90,matched
+35,Kiernan Dewsbury-Hall,MID,Kiernan Dewsbury-Hall,100.0,2,90,matched
+36,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,11,90,matched
+36,Nico O'Reilly,DEF,Nico O'Reilly,100.0,5,90,matched
+36,Marc Guéhi,DEF,Marc Guéhi,100.0,15,180,matched
+36,Jurriën Timber,DEF,Jurriën Timber,100.0,0,0,matched
+36,Nordi Mukiele,DEF,Nordi Mukiele,100.0,6,90,matched
+36,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,2,90,matched
+36,Jarrod Bowen,FWD,Jarrod Bowen,100.0,2,90,matched
+36,Hugo Ekitiké,FWD,Hugo Ekitiké,100.0,0,0,matched
+36,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,3,90,matched
+36,Robin Roefs,GK,Robin Roefs,100.0,6,90,matched
+36,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,3,90,matched
+36,Antoine Semenyo,MID,Antoine Semenyo,100.0,12,180,matched
+36,Harry Wilson,MID,Harry Wilson,100.0,2,61,matched
+36,Declan Rice,MID,Declan Rice,100.0,3,90,matched
+36,Carlos Henrique Casimiro,MID,Carlos Henrique Casimiro,100.0,0,0,matched
+37,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,6,90,matched
+37,Nico O'Reilly,DEF,Nico O'Reilly,100.0,2,90,matched
+37,Marc Guéhi,DEF,Marc Guéhi,100.0,2,90,matched
+37,Jurriën Timber,DEF,Jurriën Timber,100.0,0,0,matched
+37,Nordi Mukiele,DEF,Nordi Mukiele,100.0,2,90,matched
+37,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,0,0,matched
+37,Jarrod Bowen,FWD,Jarrod Bowen,100.0,2,90,matched
+37,Hugo Ekitiké,FWD,Hugo Ekitiké,100.0,0,0,matched
+37,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,2,90,matched
+37,Robin Roefs,GK,Robin Roefs,100.0,3,90,matched
+37,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,9,90,matched
+37,Antoine Semenyo,MID,Antoine Semenyo,100.0,1,55,matched
+37,Harry Wilson,MID,Harry Wilson,100.0,1,11,matched
+37,Declan Rice,MID,Declan Rice,100.0,5,90,matched
+37,Carlos Henrique Casimiro,MID,Carlos Henrique Casimiro,100.0,1,80,matched
+38,Gabriel dos Santos Magalhães,DEF,Gabriel dos Santos Magalhães,100.0,1,45,matched
+38,Nico O'Reilly,DEF,Nico O'Reilly,100.0,0,0,matched
+38,Marc Guéhi,DEF,Marc Guéhi,100.0,0,0,matched
+38,Jurriën Timber,DEF,Jurriën Timber,100.0,0,0,matched
+38,Nordi Mukiele,DEF,Nordi Mukiele,100.0,4,90,matched
+38,João Pedro Junqueira de Jesus,FWD,João Pedro Junqueira de Jesus,100.0,1,90,matched
+38,Jarrod Bowen,FWD,Jarrod Bowen,100.0,12,90,matched
+38,Hugo Ekitiké,FWD,Hugo Ekitiké,100.0,0,0,matched
+38,Caoimhín Kelleher,GK,Caoimhín Kelleher,100.0,6,90,matched
+38,Robin Roefs,GK,Robin Roefs,100.0,2,90,matched
+38,Bruno Borges Fernandes,MID,Bruno Borges Fernandes,100.0,14,90,matched
+38,Antoine Semenyo,MID,Antoine Semenyo,100.0,6,57,matched
+38,Harry Wilson,MID,Harry Wilson,100.0,4,18,matched
+38,Declan Rice,MID,Declan Rice,100.0,0,0,matched
+38,Carlos Henrique Casimiro,MID,Carlos Henrique Casimiro,100.0,0,0,matched

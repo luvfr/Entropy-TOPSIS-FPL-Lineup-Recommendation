@@ -1,0 +1,16 @@
+period,full_name,position,team,price,minutes,rank_score,captain_metric,role,formation
+GW33,David Raya Martín,GK,1,6.0,2880,1.0,4.0,Starting,1-4-4-2
+GW33,Jordan Pickford,GK,9,5.6,2880,0.9722222222222222,3.0,Bench,1-4-4-2
+GW33,Gabriel dos Santos Magalhães,DEF,1,7.1,2255,1.0,6.5,Starting,1-4-4-2
+GW33,Jurriën Timber,DEF,1,6.2,2452,0.989010989010989,0.5,Starting,1-4-4-2
+GW33,Marcos Senesi Barón,DEF,4,5.2,2748,0.9725274725274725,5.0,Bench,1-4-4-2
+GW33,James Tarkowski,DEF,9,5.7,2790,0.9835164835164835,3.0,Starting,1-4-4-2
+GW33,Marc Guéhi,DEF,13,5.1,2610,0.9945054945054945,8.5,Starting (VC),1-4-4-2
+GW33,James Garner,MID,9,5.3,2873,0.9732510288065843,4.333333333333333,Bench,1-4-4-2
+GW33,Harry Wilson,MID,10,6.0,2341,0.9876543209876543,4.666666666666667,Starting,1-4-4-2
+GW33,Antoine Semenyo,MID,13,8.2,2680,0.9958847736625515,2.0,Starting,1-4-4-2
+GW33,Bruno Borges Fernandes,MID,14,10.3,2525,1.0,9.0,Starting (C),1-4-4-2
+GW33,Carlos Henrique Casimiro,MID,14,5.7,2225,0.9814814814814815,5.333333333333333,Starting,1-4-4-2
+GW33,Igor Thiago Nascimento Rodrigues,FWD,5,7.3,2742,0.9758064516129032,7.666666666666667,Starting,1-4-4-2
+GW33,João Pedro Junqueira de Jesus,FWD,7,7.7,2388,0.9758064516129032,2.0,Starting,1-4-4-2
+GW33,Jarrod Bowen,FWD,19,7.6,2869,0.9516129032258065,7.333333333333333,Bench,1-4-4-2

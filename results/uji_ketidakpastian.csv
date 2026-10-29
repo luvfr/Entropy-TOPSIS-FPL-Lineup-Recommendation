@@ -1,0 +1,6 @@
+pasangan,n_gameweek,n_periode,rata_rata_selisih,sd_selisih,ik95_bawah,ik95_atas,ik_memuat_nol,menang,seri,kalah,p_uji_tanda,total_selisih,selisih_gw28_gw29,n_bootstrap,seed
+Entropy-TOPSIS vs AP,26,8,1.5,10.2,-2.12,6.17,True,14,0,12,0.845,39.0,37.0,10000,20260
+Baseline 1 vs AP,26,8,5.0,15.94,-0.12,9.5,True,15,0,11,0.5572,130.0,82.0,10000,20260
+Baseline 2 vs AP,26,8,1.15,14.1,-5.21,8.19,True,14,0,12,0.845,30.0,56.0,10000,20260
+Entropy-TOPSIS vs Baseline 1,26,8,-3.5,14.29,-7.63,0.42,True,8,1,17,0.1078,-91.0,-45.0,10000,20260
+Entropy-TOPSIS vs Baseline 2,26,8,0.35,9.55,-3.46,4.5,True,14,1,11,0.69,9.0,-19.0,10000,20260

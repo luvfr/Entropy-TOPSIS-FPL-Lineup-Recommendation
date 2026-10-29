@@ -1,0 +1,6 @@
+Kode,Kriteria,Jenis,Nilai Entropy (ej),Derajat Diferensiasi (dj),Bobot (wj)
+C1,Threat,Benefit,0.898722,0.101278,0.145872
+C2,Gol,Benefit,0.82867,0.17133,0.246769
+C3,Assists,Benefit,0.78595,0.21405,0.308299
+C4,Bonus,Benefit,0.792365,0.207635,0.29906
+,TOTAL,,,,1.0
